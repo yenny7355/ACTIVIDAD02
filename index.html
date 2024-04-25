@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Escala para dispositivos -->
+    <title>UPDS</title><!-- Título de la página -->
+    <link rel="icon" type="image/x/icon" href="/img/product-upds-tuition-removebg-preview.svg"><!--icono de la pestania UPDS-->
+    <link rel="stylesheet" href="css/tailwind.min.css"><!-- Estilos de Tailwind CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- Estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css"><!-- Estilos de DataTables -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"><!-- Estilos de Font Awesome -->
+
+
+</head>
+<body class="min-h-100 bg-gray-200"><!-- Fondo y altura mínima del cuerpo -->
+    <div class="md:flex min-h-screen md:align-top"><!-- Diseño flexible y altura mínima de la pantalla -->
+        <aside class="md:w-2/6 lg:w-1/6 xl:w-1/5 bg-indigo-800 px-4 py-10"><!--cambio de color del menu lateral-->
+            <h1 class="uppercase text-white tracking-wide text-2xl  font-bold mt-2">Registros Universitarios</h1> <!--Cambio de titulo-->
+            <p class="mt-10 text-white">Registro Universitario del Club Deportivo</p><!--cambio del subtitulo-->
+            <nav class="mt-8">
+                <a  
+                    href="/" 
+                    class="px-3 py-1 text-white block hover:bg-teal-700 hover:text-yellow-400 bg-teal-700"
+                ><i class="fas fa-users"></i> Estudiantes</a><!--cambio del subtitulo del formulario-->
+                <a 
+                    href="nuevo-cliente.html" 
+                    class="px-3 py-1 text-white block hover:bg-teal-900 mt-2 hover:text-yellow-400"
+                ><i class="fas fa-user-plus"></i> Nuevo Estudiante</a><!--cambio del subtitulo del formulario-->
+
+            
+
+            </nav>
+
+            <center> <img src="/img/logo_trans-1.png" alt="" width="85%" style="transform: translateY(100px); "></center><!--agregar imagen en el menu layeral-->
+
+
+        </aside> <!--sidebar-->
+        <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-gray-200"> <!--cambio de color al cuerpo de la pagina-->
+            <h2 class="text-3xl font-light text-center">Estudiantes</h2><!-- Título -->
+
+            <div class="flex flex-col mt-10">
+                <div class="py-2 overflow-x-auto">
+                  <div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200 font-bold uppercase" >
+                    <table id="myTable" class="min-w-full">
+                        <thead class="bg-gray-100 ">
+                            <tr>
+                                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                                        Nombre del Estudiante
+                                </th>
+                                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Teléfono
+                                </th>
+                                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Universidad
+                                </th>
+                                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Edicion
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="listado-clientes" class="bg-white"></tbody>
+
+                        <tfoot>
+                            <tr class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                <td class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider"> Nombre del Estudiante</td>
+                                <td class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">Teléfono</td>
+                                <td class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">Universidad</td>
+                                <td class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">Edicion</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><!-- jQuery -->
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script><!-- DataTables -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script><!-- SweetAlert2 -->
+    <script src="js/app.js"></script><!-- Script personalizado -->
+</body>
+ </html> 

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../proyectosjs/Administrador-pacientes-veterinaria"
+		},
+		{
+			"path": "../proyectosjs/AdminCliente-IndexedDB-master (2)"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "actividad2"
+	}
+}
